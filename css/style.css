@@ -38,7 +38,8 @@
 }
 
 html,body {
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     background-repeat: no-repeat;
@@ -63,9 +64,8 @@ h1{
 }
 
 main{
-    max-width: 80%;
+    width: 80vw;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 /*Buttons */
@@ -169,4 +169,21 @@ header{
     color: var(--color4);
     font-weight: var(--body-s-weight);
     padding: 15px 0px 0 0;
+}
+
+/* Footer */
+footer{
+    margin-top: 8%;
+    padding: 30px 0;
+    background-color:var(--color2);
+}
+.footer_content{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer_button{
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
