@@ -81,13 +81,17 @@ main{
     border-radius: 28px;
     display: grid;
     align-items: center;
+    cursor: pointer;
 }
 .get-started{
     background-color: var(--color2);
-}
+    z-index: 3;
+}.get-started:hover{background-color: var(--color1);}
 .hero-box__button{background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);}
-
-
+.hero-box__button:hover{background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);}
+.footer_button{
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}.footer_button:hover{background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);}
 
 /*Header */
 header{
@@ -95,6 +99,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+    z-index: 9;
 }
 
 /*Hero box*/
@@ -104,6 +109,7 @@ header{
     margin-top: 5%;
     min-height: 500px;
     align-items: center;
+    z-index: 2;
 }
 
 .hero-box__info {
@@ -121,6 +127,7 @@ header{
     position: relative;
     top: -120px;
     left: 680px;
+    z-index: 1;
 }
 
 /* Boxes */
@@ -183,7 +190,4 @@ footer{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-}
-.footer_button{
-    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
