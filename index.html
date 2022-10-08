@@ -27,7 +27,11 @@
       </div>
 
       <div class="hero-box__img">
-        <img src="./assets/image-hero-desktop.webp" alt="">
+        <picture>
+          <source srcset="./assets/image-hero-mobile.png" media="(max-width: 800px)">
+          <source srcset="./assets/image-hero-tablet.png" media="(max-width: 995px)">
+          <img src="./assets/image-hero-desktop.webp" alt="Hero img">
+        </picture>
       </div>
     </div>
 
