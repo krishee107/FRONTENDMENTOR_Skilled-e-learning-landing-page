@@ -131,12 +131,11 @@ header{
 /* Boxes */
 .boxes-container {
     padding-top: 15%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 30px;
     row-gap: 56px;
+    justify-items: center;
 }
 .boxes-container .box:first-child{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -177,8 +176,6 @@ header{
     padding: 15px 0px 0 0;
 }
 
-.box-link:hover {cursor: pointer;color: #fd6556;}
-
 /* Footer */
 footer{
     margin-top: 8%;
@@ -209,6 +206,7 @@ footer{
     .hero-box__text{width: unset;}
     .hero-box__img {
         position: unset;
+        margin: 0 auto;
     }
     
     .hero-box {
