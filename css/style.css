@@ -66,6 +66,7 @@ h1{
 main{
     width: 80vw;
     margin: 0 auto;
+    max-width: 1300px;
 }
 
 /*Buttons */
@@ -115,7 +116,7 @@ header{
 .hero-box__info {
     gap: 30px;
     display: grid;
-    width: 50vw;
+    max-width: 50vw;
 }
 .hero-box__text {
     font-size: var(--body-m-size);
@@ -202,6 +203,7 @@ footer{
 @media (max-width: 800px) {
     .hero-box__info{
         width: unset;
+        max-width: unset;
     }
     .hero-box__text{width: unset;}
     .hero-box__img {
@@ -216,4 +218,9 @@ footer{
     } 
 
     .boxes-container{justify-content: center;}
+}
+
+/*Plus */
+@media (min-width:1725px) {
+    .hero-box__info{    width: 30vw;}
 }
